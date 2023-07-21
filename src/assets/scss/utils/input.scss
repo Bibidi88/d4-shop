@@ -1,0 +1,19 @@
+input {
+    outline: 0;
+    padding: 0.2rem 1rem;
+    border: 1px solid #242c37;
+    background-color: #fff;
+    border-radius: 999px;
+    width: 220px;
+}
+
+.from{
+    border-radius: 999px 0 0 999px;
+    width: 76px;
+}
+
+.to{
+    border-radius: 0 999px 999px 0;
+    width: 76px;
+}
+

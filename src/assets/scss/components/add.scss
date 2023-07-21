@@ -1,0 +1,99 @@
+.addMenu {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+  
+    a {
+      display: block;
+      position: relative;
+      padding: 18.8px 15px;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+      border-left: 5px solid #fff;
+  
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      text-decoration: none;
+      color: #fff;
+      max-width: 100%;
+  
+      &::after,
+      &::before {
+        transform: rotate(0deg);
+        background-color: #00aeff;
+        position: absolute;
+        top: 40%;
+        transition: all 0.2s ease-in-out;
+        right: 15px;
+        width: 14px;
+        height: 2px;
+        margin-top: 6px;
+        content: "";
+      }
+  
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  
+    input {
+        max-width: 186px;
+    }
+    
+    .active {
+      background-color: rgba(0, 0, 0, 0.3);
+  
+      &::before,
+      &::after {
+        transform: rotate(0deg);
+        background-color: #fff;
+      }
+    }
+  
+    .filter {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  
+    .addMenuInputs {
+      border-left: 5px solid rgba(0, 174, 255, 0.05);
+    }
+  
+    .container-grid {
+  
+      padding: 18.8px 15px;
+      display: inline-grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "itemImage"
+        "itemForm"
+    }
+  
+    .item-image {
+      grid-area: itemImage;
+    }
+  
+    .item-Form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: auto;
+      grid-area: itemForm;
+    }
+  
+    .item-submit {
+      width: 100%;
+      grid-area: submit;
+    }
+  
+    @media screen and (min-width: 576px) {
+    }
+  
+    @media screen and (min-width: 720px) {
+      .container-grid {
+        grid-template-columns: auto auto;
+        grid-template-areas:
+          "itemImage itemForm"
+      }
+    }
+  }
+  

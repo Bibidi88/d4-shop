@@ -1,0 +1,30 @@
+.item {
+  background-color: #0f0f12;
+  border-radius: 15px;
+  width: 220px;
+  padding: 5px;
+
+
+  img {
+    max-width: 398px;
+    max-height: 288px;
+  }
+
+  div {
+    list-style: none;
+    color: azure;
+    text-align: left;
+  }
+  
+  button {
+      margin-bottom: 0.83em;
+  
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

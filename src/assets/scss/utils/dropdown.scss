@@ -1,0 +1,33 @@
+.dropdown {
+    width: 220px;
+    display: inline;
+    .dropdown-input {
+      display: inline-block;
+      box-sizing: border-box;
+      &:hover {
+        background: #f8f8fa;
+      }
+    }
+    .dropdown-content {
+      position: absolute;
+      background-color: #fff;
+      overflow:auto;
+      z-index: 1;
+
+      .dropdown-item {
+        color: black;
+        font-size: .7em;
+        line-height: 1em;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        &:hover {
+          background-color: #e7ecf5;
+        }
+      }
+    }
+    .dropdown:hover .dropdowncontent {
+      display: block;
+    }
+  }

@@ -1,0 +1,61 @@
+@import './utils/imortmap.scss';
+@import './components/importmap.scss';
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+section {
+  border-bottom: #ccc 2px solid;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+  background-color: #15161a;
+}
+
+.container {
+    margin: 40px 5px;
+
+    &-flex {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        gap: 10px;
+    }
+}
+
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 720px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
